@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <title> THE CALCULATOR</title>
     <link rel="stylesheet" href="style.css" media="all">
-<head></head>
+<head> <script src="app.js" defer></script></head>
 <body>
     <div id = 'container'>
-        <div class="screen">
-              <input type="number" disabled>  
+        <div id="screen">
         </div>
         <div id="left-container">
-            <button class="number" value = '1'>1</button>
-            <button class="number" value = '2'>2</button>
-            <button class="number" value = '3'>3</button>
-            <button class="number" value = '4'>4</button>
-            <button class="number" value = '5'>5</button>
-            <button class="number" value = '6'>6</button>
-            <button class="number" value = '7'>7</button>
-            <button class="number" value = '8'>8</button>
-            <button class="number" value = '9'>9</button>
-            <button class="number" value = '0'>0</button>
+            <button class="number" data >1</button>
+            <button class="number" data >2</button>
+            <button class="number" data >3</button>
+            <button class="number" data >4</button>
+            <button class="number" data >5</button>
+            <button class="number" data >6</button>
+            <button class="number" data >7</button>
+            <button class="number" data >8</button>
+            <button class="number" data >9</button>
+            <button class="number" data >0</button>
         </div>
         <!--- Operator Buttons --->
         <div id="right-container">
-            <button class="operator" value="+">+</button>
-            <button class="operator" value="-">-</button>
-            <button class="operator" value="*">*</button>
-            <button class="operator" value="/">/</button>
-            <button class="operator" value="=">=</button>
-            <button class="operator C" value="C">C</button>
+            <button class="operator" operator>+</button>
+            <button class="operator" operator>-</button>
+            <button class="operator" operator>*</button>
+            <button class="operator" operator>/</button>
+            <button class="operator" operator>=</button>
+            <button class="operator C" id = "data-clear">C</button>
         </div>
     </div>
 </body>

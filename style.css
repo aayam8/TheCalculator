@@ -40,19 +40,19 @@
     height: 175px;
     width: 150px;
 }
-.screen{
+#screen{
     display: flex;
     height: 70px;
     width: 500px;
     margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
 }
 
-input{
-    display: flex;
-    flex:1;
-    background-color: white;
-    border-radius: 5px;
-}
+
 
 button{
     color: white;
