@@ -6,29 +6,26 @@ const clearBtn = document.getElementById("data-clear");
 let fArg = 0;
 let operator = '';
 let lArg = 0;
-
+let counter = 0;
 
 numBtn.forEach( (button) =>
     button.addEventListener('click', () => {
-        display(button.textContent);
-        counter = 0;
-        if (counter === 0 ){
-            fArg = button.textContent;
-            console.log(fArg);
-            counter +=1;
-        } else {
-        lArg = button.textContent;
-        console.log(lArg);
-        }
+    display(button.textContent);
+    if (counter === 0){
+        fArg = dScreen.textContent;
+        console.log(`fArg ${fArg}`);
+    } else {
+        lArg = dScreen.textContent;
+        console.log(`lArg ${lArg}`);
+    };
 })
 );
-
 
 opBtn.forEach( (button) =>
     button.addEventListener('click', () => {
     operator = button.textContent;
+    counter += 1;
     clear();
-    console.log(operator);
 })
 );
 
@@ -40,11 +37,5 @@ function display(number){
 
 function clear(){
     dScreen.textContent = '';
+    fArg = 0;
 }
-
-function evaluate (num1, num2, op){
-    if (op === '+'){
-        return num1 + num2;
-    }
-}
-
